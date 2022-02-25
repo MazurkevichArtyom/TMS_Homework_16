@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW16" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQR-bf-4gD">
+                                <rect key="frame" x="16" y="240" width="382" height="426.5"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis diam ipsum, in interdum ante venenatis et. Proin interdum lectus at aliquet consequat. Donec tristique lacus at tellus sagittis, quis fringilla est consequat. Vestibulum sodales, sapien sed aliquam dictum, arcu sem egestas est, sed consectetur ex risus eget quam. Vestibulum luctus sodales erat ac congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla aliquet ligula, sed faucibus neque convallis vestibulum. Ut ultrices efficitur lectus. Nam mi mi, pellentesque vitae tempor pharetra, fermentum rhoncus tellus. Integer mattis nisi ligula, eget feugiat ante pellentesque maximus. Praesent libero nunc, sollicitudin in risus et, mollis blandit est. Nulla tincidunt imperdiet interdum. Cras placerat enim non dolor imperdiet, eget consectetur dolor accumsan. Donec mollis tempor elit, ac hendrerit ligula placerat ut. Fusce efficitur eu ligula quis auctor.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <visualEffectView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IP2-ta-rZW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MKt-gk-86n">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IP2-ta-rZW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="3cX-bJ-uqN"/>
+                            <constraint firstAttribute="bottom" secondItem="IP2-ta-rZW" secondAttribute="bottom" id="QuV-dT-atX"/>
+                            <constraint firstItem="MQR-bf-4gD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gfe-re-OJm"/>
+                            <constraint firstItem="MQR-bf-4gD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ij5-Su-L7r"/>
+                            <constraint firstItem="IP2-ta-rZW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sSe-df-p1t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MQR-bf-4gD" secondAttribute="trailing" constant="16" id="sU8-q5-1jC"/>
+                            <constraint firstItem="IP2-ta-rZW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ywF-g9-zPi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blurView" destination="IP2-ta-rZW" id="WQc-qJ-pVj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
